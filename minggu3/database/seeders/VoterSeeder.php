@@ -15,9 +15,9 @@ class VoterSeeder extends Seeder
         \App\Models\Voter::factory(10)->create();
 
         \App\Models\Voter::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'address' => 'Mastrip 163',
+            'name' => 'Nofaira Amin',
+            'email' => 'nofairamn@example.com',
+            'address' => 'Mastrip GG IX',
         ]);
     }
 }
