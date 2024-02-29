@@ -5,7 +5,7 @@
         <h2>Edit Task</h2>
         
         <form action="{{url("/task/{$tasks->id}") }}" method="POST">
-            @csrf
+            @csrf <!-- Cross-site request forgery -->
             @method('PUT')
             <div class="form-group">
                 <label for="name">Name</label>

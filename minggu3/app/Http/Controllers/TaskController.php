@@ -27,6 +27,11 @@ class TaskController extends Controller
         return view('task.edit', compact('tasks'));
     }
 
+    public function delete (Task $task){
+        $task->delete();
+        return redirect('/task');
+    }
+
     public function update(Request $request, $id){
         $tasks = Task::findOrFail($id);
         $tasks->update($request->all());
